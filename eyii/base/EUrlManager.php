@@ -1,0 +1,2 @@
+<?
+class EUrlManager extends CUrlManager{}

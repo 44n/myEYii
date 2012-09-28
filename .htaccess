@@ -1,0 +1,32 @@
+Options -Indexes 
+ErrorDocument 404 /404
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+  
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} ^/ajax/.*
+  RewriteRule ^(.*)$ /ajax.php [L]
+  
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} ^/extjs/.*
+  RewriteRule ^(.*)$ /extjs.php [L]  
+ 
+  RewriteCond %{REQUEST_FILENAME} !-f  
+  RewriteRule ^(.*)$ /web.php [L]
+  RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+  
+</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/jpeg "access plus 3 day"
+  ExpiresByType image/gif "access plus 3 day"
+  ExpiresByType image/png "access plus 3 day"
+</IfModule>

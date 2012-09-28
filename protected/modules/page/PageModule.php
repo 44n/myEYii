@@ -1,0 +1,3 @@
+<?
+class PageModule extends EWebModule{
+}

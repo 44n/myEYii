@@ -1,0 +1,2 @@
+<?
+class EWebModule extends CWebModule{}
