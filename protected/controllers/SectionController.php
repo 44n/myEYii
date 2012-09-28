@@ -39,8 +39,12 @@ class SectionController extends Controller
         if(isset($_POST['SectionModel']))
         {
             $model->attributes=$_POST['SectionModel'];
-            if($model->save())
-                $this->redirect(array('view','id'=>$model->id));
+            
+            if($model->save()){
+                if($model->parent_id ==0)
+                $this->redirect('index');
+                $this->redirect(array('view','id'=>$model->parent_id));
+            }
         }
 
         $this->render('create',array(
