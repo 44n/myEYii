@@ -6716,3 +6716,225 @@ Stack trace:
 REQUEST_URI=/section/view/id/1
 HTTP_REFERER=http://eyii.ru/section/index
 ---
+2012/09/28 17:01:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\project.ru\myEYii\web.php(9): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/28 17:01:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\project.ru\myEYii\web.php(9): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/28 17:01:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\project.ru\myEYii\web.php(9): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/28 17:01:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php:280
+Stack trace:
+#0 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 Z:\home\project.ru\myEYii\web.php(9): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/28 17:25:04 [error] [exception.CException] exception 'CException' with message 'Property "CDbConnection.chrset" is not defined.' in Z:\home\project.ru\myEYii\eyii\yii\base\CComponent.php:174
+Stack trace:
+#0 Z:\home\project.ru\myEYii\eyii\yii\YiiBase.php(222): CComponent->__set('chrset', 'utf-8')
+#1 Z:\home\project.ru\myEYii\eyii\yii\base\CModule.php(387): YiiBase::createComponent(Array)
+#2 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(431): CModule->getComponent('db')
+#3 Z:\home\project.ru\myEYii\eyii\yii\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#4 Z:\home\project.ru\myEYii\eyii\yii\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#5 Z:\home\project.ru\myEYii\eyii\yii\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(SectionModel))
+#6 Z:\home\project.ru\myEYii\protected\models\SectionModel.php(25): CActiveRecord::model('SectionModel')
+#7 Z:\home\project.ru\myEYii\protected\controllers\SectionController.php(134): SectionModel::model()
+#8 Z:\home\project.ru\myEYii\protected\controllers\SectionController.php(61): SectionController->loadModel('5')
+#9 [internal function]: SectionController->actionUpdate('5')
+#10 Z:\home\project.ru\myEYii\eyii\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SectionController), Array)
+#11 Z:\home\project.ru\myEYii\eyii\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SectionController), Object(ReflectionMethod), Array)
+#12 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(276): CController->run('update')
+#16 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(135): CWebApplication->runController('section/update/...')
+#17 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#18 Z:\home\project.ru\myEYii\web.php(9): CApplication->run()
+#19 {main}
+REQUEST_URI=/section/update/id/5
+HTTP_REFERER=http://www.myeyii.project.ru/section/view/id/5
+---
+2012/09/28 17:25:04 [error] [exception.CException] exception 'CException' with message 'Property "CDbConnection.chrset" is not defined.' in Z:\home\project.ru\myEYii\eyii\yii\base\CComponent.php:174
+Stack trace:
+#0 Z:\home\project.ru\myEYii\eyii\yii\YiiBase.php(222): CComponent->__set('chrset', 'utf-8')
+#1 Z:\home\project.ru\myEYii\eyii\yii\base\CModule.php(387): YiiBase::createComponent(Array)
+#2 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(431): CModule->getComponent('db')
+#3 Z:\home\project.ru\myEYii\eyii\yii\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#4 Z:\home\project.ru\myEYii\eyii\yii\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#5 Z:\home\project.ru\myEYii\eyii\yii\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(SectionModel))
+#6 Z:\home\project.ru\myEYii\protected\models\SectionModel.php(25): CActiveRecord::model('SectionModel')
+#7 Z:\home\project.ru\myEYii\protected\controllers\SectionController.php(134): SectionModel::model()
+#8 Z:\home\project.ru\myEYii\protected\controllers\SectionController.php(61): SectionController->loadModel('5')
+#9 [internal function]: SectionController->actionUpdate('5')
+#10 Z:\home\project.ru\myEYii\eyii\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SectionController), Array)
+#11 Z:\home\project.ru\myEYii\eyii\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SectionController), Object(ReflectionMethod), Array)
+#12 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(276): CController->run('update')
+#16 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(135): CWebApplication->runController('section/update/...')
+#17 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#18 Z:\home\project.ru\myEYii\web.php(9): CApplication->run()
+#19 {main}
+REQUEST_URI=/section/update/id/5
+HTTP_REFERER=http://www.myeyii.project.ru/section/view/id/5
+---
+2012/09/28 17:25:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000]: Syntax error or access violation: 1115 Unknown character set: 'utf-8'' in Z:\home\project.ru\myEYii\eyii\yii\db\CDbConnection.php:382
+Stack trace:
+#0 Z:\home\project.ru\myEYii\eyii\yii\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\project.ru\myEYii\eyii\yii\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 Z:\home\project.ru\myEYii\eyii\yii\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(431): CModule->getComponent('db')
+#4 Z:\home\project.ru\myEYii\eyii\yii\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 Z:\home\project.ru\myEYii\eyii\yii\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 Z:\home\project.ru\myEYii\eyii\yii\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(SectionModel))
+#7 Z:\home\project.ru\myEYii\protected\models\SectionModel.php(25): CActiveRecord::model('SectionModel')
+#8 Z:\home\project.ru\myEYii\protected\controllers\SectionController.php(134): SectionModel::model()
+#9 Z:\home\project.ru\myEYii\protected\controllers\SectionController.php(61): SectionController->loadModel('5')
+#10 [internal function]: SectionController->actionUpdate('5')
+#11 Z:\home\project.ru\myEYii\eyii\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SectionController), Array)
+#12 Z:\home\project.ru\myEYii\eyii\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SectionController), Object(ReflectionMethod), Array)
+#13 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#15 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(276): CController->run('update')
+#17 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(135): CWebApplication->runController('section/update/...')
+#18 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#19 Z:\home\project.ru\myEYii\web.php(9): CApplication->run()
+#20 {main}
+REQUEST_URI=/section/update/id/5
+HTTP_REFERER=http://www.myeyii.project.ru/section/view/id/5
+---
+2012/09/28 17:25:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000]: Syntax error or access violation: 1115 Unknown character set: 'utf-8'' in Z:\home\project.ru\myEYii\eyii\yii\db\CDbConnection.php:382
+Stack trace:
+#0 Z:\home\project.ru\myEYii\eyii\yii\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\home\project.ru\myEYii\eyii\yii\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 Z:\home\project.ru\myEYii\eyii\yii\base\CModule.php(388): CDbConnection->init()
+#3 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(431): CModule->getComponent('db')
+#4 Z:\home\project.ru\myEYii\eyii\yii\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 Z:\home\project.ru\myEYii\eyii\yii\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 Z:\home\project.ru\myEYii\eyii\yii\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(SectionModel))
+#7 Z:\home\project.ru\myEYii\protected\models\SectionModel.php(25): CActiveRecord::model('SectionModel')
+#8 Z:\home\project.ru\myEYii\protected\controllers\SectionController.php(134): SectionModel::model()
+#9 Z:\home\project.ru\myEYii\protected\controllers\SectionController.php(61): SectionController->loadModel('5')
+#10 [internal function]: SectionController->actionUpdate('5')
+#11 Z:\home\project.ru\myEYii\eyii\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SectionController), Array)
+#12 Z:\home\project.ru\myEYii\eyii\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SectionController), Object(ReflectionMethod), Array)
+#13 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#15 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(276): CController->run('update')
+#17 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(135): CWebApplication->runController('section/update/...')
+#18 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#19 Z:\home\project.ru\myEYii\web.php(9): CApplication->run()
+#20 {main}
+REQUEST_URI=/section/update/id/5
+HTTP_REFERER=http://www.myeyii.project.ru/section/view/id/5
+---
+2012/09/28 18:00:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in Z:\home\project.ru\myEYii\protected\controllers\SectionController.php:136
+Stack trace:
+#0 Z:\home\project.ru\myEYii\protected\controllers\SectionController.php(24): SectionController->loadModel('0')
+#1 [internal function]: SectionController->actionView('0')
+#2 Z:\home\project.ru\myEYii\eyii\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SectionController), Array)
+#3 Z:\home\project.ru\myEYii\eyii\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SectionController), Object(ReflectionMethod), Array)
+#4 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(276): CController->run('view')
+#8 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(135): CWebApplication->runController('section/view/id...')
+#9 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 Z:\home\project.ru\myEYii\web.php(9): CApplication->run()
+#11 {main}
+REQUEST_URI=/section/view/id/0
+---
+2012/09/28 18:00:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in Z:\home\project.ru\myEYii\protected\controllers\SectionController.php:136
+Stack trace:
+#0 Z:\home\project.ru\myEYii\protected\controllers\SectionController.php(24): SectionController->loadModel('0')
+#1 [internal function]: SectionController->actionView('0')
+#2 Z:\home\project.ru\myEYii\eyii\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SectionController), Array)
+#3 Z:\home\project.ru\myEYii\eyii\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SectionController), Object(ReflectionMethod), Array)
+#4 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(276): CController->run('view')
+#8 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(135): CWebApplication->runController('section/view/id...')
+#9 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 Z:\home\project.ru\myEYii\web.php(9): CApplication->run()
+#11 {main}
+REQUEST_URI=/section/view/id/0
+---
+2012/09/28 18:00:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in Z:\home\project.ru\myEYii\eyii\yii\web\CController.php:337
+Stack trace:
+#0 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(276): CController->run('view')
+#4 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(135): CWebApplication->runController('section/view')
+#5 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#6 Z:\home\project.ru\myEYii\web.php(9): CApplication->run()
+#7 {main}
+REQUEST_URI=/section/view/
+---
+2012/09/28 18:00:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in Z:\home\project.ru\myEYii\eyii\yii\web\CController.php:337
+Stack trace:
+#0 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(276): CController->run('view')
+#4 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(135): CWebApplication->runController('section/view')
+#5 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#6 Z:\home\project.ru\myEYii\web.php(9): CApplication->run()
+#7 {main}
+REQUEST_URI=/section/view/
+---
+2012/09/28 18:07:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in Z:\home\project.ru\myEYii\protected\controllers\SectionController.php:140
+Stack trace:
+#0 Z:\home\project.ru\myEYii\protected\controllers\SectionController.php(24): SectionController->loadModel('')
+#1 [internal function]: SectionController->actionView('')
+#2 Z:\home\project.ru\myEYii\eyii\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SectionController), Array)
+#3 Z:\home\project.ru\myEYii\eyii\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SectionController), Object(ReflectionMethod), Array)
+#4 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(276): CController->run('view')
+#8 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(135): CWebApplication->runController('section/view/id')
+#9 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 Z:\home\project.ru\myEYii\web.php(9): CApplication->run()
+#11 {main}
+REQUEST_URI=/section/view/id/
+---
+2012/09/28 18:07:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in Z:\home\project.ru\myEYii\protected\controllers\SectionController.php:140
+Stack trace:
+#0 Z:\home\project.ru\myEYii\protected\controllers\SectionController.php(24): SectionController->loadModel('')
+#1 [internal function]: SectionController->actionView('')
+#2 Z:\home\project.ru\myEYii\eyii\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SectionController), Array)
+#3 Z:\home\project.ru\myEYii\eyii\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SectionController), Object(ReflectionMethod), Array)
+#4 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 Z:\home\project.ru\myEYii\eyii\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(276): CController->run('view')
+#8 Z:\home\project.ru\myEYii\eyii\yii\web\CWebApplication.php(135): CWebApplication->runController('section/view/id')
+#9 Z:\home\project.ru\myEYii\eyii\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 Z:\home\project.ru\myEYii\web.php(9): CApplication->run()
+#11 {main}
+REQUEST_URI=/section/view/id/
+---
