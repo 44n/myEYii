@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ExtTop - Desktop Sample App</title>
+
+    <link rel="stylesheet" type="text/css" href="/ext/resources/css/ext-all.css" />
+    <link rel="stylesheet" type="text/css" href="/ext/desktop/css/desktop.css" />
+
+    <!-- GC -->
+
+
+    <script type="text/javascript" src="/ext/ext-all-debug.js "></script>
+
+    <script type="text/javascript">
+        var store;     
+        Ext.onReady(function () {
+			Ext.define('WeatherPoint', {
+				extend: 'Ext.data.Model',
+				fields: ['temperature', 'date']
+			});
+			
+			store = Ext.create('Ext.data.Store', {
+				model: 'WeatherPoint',
+					/*data: [
+						{ temperature: 58, date: 2 },
+						{ temperature: 63, date: 5 },
+						{ temperature: 73, date: 7 },
+						{ temperature: 78, date: 8 },
+						{ temperature: 81, date: 12 }
+					]*/
+			});
+			
+			Ext.create('Ext.chart.Chart', {				
+					store: store,
+					renderTo: Ext.getBody(),
+					width: 350,
+					height: 350,
+					axes: [
+						{
+							title: 'Temperature',
+							type: 'Numeric',
+							position: 'left',
+							fields: ['temperature'],
+							minimum: 0,
+							maximum: 100
+						},
+						{
+							title: 'Time',
+							type: 'Numeric',
+							position: 'bottom',
+							fields: ['date'],
+							minimum: 0,
+							maximum: 100
+						
+						}
+					],
+					series: [
+						{
+							type: 'line',
+							xField: 'date',
+							yField: 'temperature',
+								tips: {
+									  trackMouse: true,
+									  renderer: function(storeItem, item) {
+										this.setTitle(storeItem.get('date'));
+										this.update(storeItem.get('temperature') + ' ' +'куку');
+									  }
+								},
+								style: {
+									fill: '#38B8BF'
+								}	
+						}
+					]
+			});
+			
+			Ext.create('Ext.form.Panel', {
+					title: 'Simple Form',
+					bodyPadding: 5,
+					width: 350,
+
+					// The form will submit an AJAX request to this URL when submitted
+					url: 'save-form.php',
+
+					// Fields will be arranged vertically, stretched to full width
+					layout: 'anchor',
+					defaults: {
+						anchor: '100%'
+					},
+
+					// The fields
+					defaultType: 'textfield',
+					items: [{
+						xtype: 'numberfield',
+						fieldLabel: 'temperature',
+						name: 'temperature',
+						allowBlank: false
+					},{
+						xtype: 'numberfield',
+						fieldLabel: 'date',
+						name: 'date',
+						allowBlank: false
+					}],
+
+					// Reset and Submit buttons
+					buttons: [{
+						text: 'Reset',
+						handler: function() {
+							this.up('form').getForm().reset();
+						}
+					}, {
+						text: 'Submit',
+						formBind: true, //only enabled once the form is valid
+						disabled: true,
+						handler: function() {
+							var form = this.up('form').getForm();
+							if (form.isValid()) {
+								console.log(form.getFieldValues());
+								store.add(form.getFieldValues());
+							}
+						}
+					}],
+					renderTo: Ext.getBody()
+				});
+        });
+    </script>
+</head>
+
+<body>
+
+    <a href="http://www.sencha.com" target="_blank" alt="Powered by Ext JS"
+       id="poweredby"><div></div></a>
+	<a href="http://www.some.ru" target="_blank" alt="Powered by EASY Yii"
+       id="poweredby"><div></div></a>
+
+</body>
+</html>
